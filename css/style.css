@@ -1,3 +1,43 @@
-#hello-world{
-    margin: 100px;
+/* body css */
+#body {
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url("../images/survey-form-background.jpeg");
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* header css */
+#title{
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+#description {
+    color: white;
+    font-style: italic;
+}
+
+/* content css */
+#content {
+    width: 80%;
+    margin: 30px auto 0;
+}
+
+/* form css */
+#survery-form {
+    background: rgba(27, 27, 50, 0.8);
+    padding: 50px;
+    text-align: left;
+    border-radius: 3px;
+    width: 80%;
+}
+.label-generic {
+    color: white;
+    display: block;
+}
+.input-generic {
+    width: 100%;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 16px;
 }
