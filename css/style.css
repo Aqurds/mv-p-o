@@ -32,7 +32,7 @@
 }
 .label-generic {
     color: white;
-    display: block;
+    display: block;   
 }
 .input-generic {
     width: 100%;
@@ -40,4 +40,5 @@
     height: 30px;
     border-radius: 5px;
     font-size: 16px;
+    margin-bottom: 30px;
 }
