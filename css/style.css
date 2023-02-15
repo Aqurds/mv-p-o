@@ -5,6 +5,14 @@
     text-align: center;
 }
 
+/* generic css */
+.margin-top-30 {
+    margin-top: 30px;
+}
+.span-little-font-size {
+    font-size: 12px;
+}
+
 /* header css */
 #title{
     color: white;
@@ -41,4 +49,12 @@
     border-radius: 5px;
     font-size: 16px;
     margin-bottom: 30px;
+}
+.radion-generic {
+    display: flex;
+    margin: 10px 0px 5px;
+}
+.radion-generic label {
+    margin-left: 10px;
+    margin-top: 4px;
 }
