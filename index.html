@@ -31,32 +31,32 @@
     </div>
 
     <div id="content">
-      <form action="" id="survery-form">
+      <form action="" id="survey-form">
 
         <!-- Name input field  -->
-        <label for="name" class="label-generic">Name</label>
+        <label for="name" id="name-label" class="label-generic">Name</label>
         <input type="text" id="name" class="input-generic" placeholder="Enter your name" required>
         
         <!-- Email input field  -->
-        <label for="email" class="label-generic">Email</label>
+        <label for="email" id="email-label" class="label-generic">Email</label>
         <input type="email" id="email" class="input-generic" placeholder="Enter your email" required>
 
         <!-- Age input field  -->
-        <label for="age" class="label-generic">Age</label>
-        <input type="number" id="age" class="input-generic" placeholder="Age">
+        <label for="number" id="number-label" class="label-generic">Age</label>
+        <input type="number" id="number" class="input-generic" placeholder="Age" min="10" max="99">
 
         <!-- Role select option -->
         <div>
           <label class="label-generic">
             Which option best describes your current role?
           </label>
-          <select class="input-generic">
+          <select class="input-generic" id="dropdown">
             <option disabled selected>select your current role</option>
-            <option>student</option>
-            <option>full time job</option>
-            <option>full time learner</option>
-            <option>prefer not to say</option>
-            <option>other</option>
+            <option value="student">student</option>
+            <option value="full-time-job">full time job</option>
+            <option value="full-time-learner">full time learner</option>
+            <option value="prefer-not-to-say">prefer not to say</option>
+            <option value="other">other</option>
           </select>
         </div>
 
@@ -66,15 +66,15 @@
             Would you recommend freeCodeCamp to a friend?
           </label>
           <div class="radion-generic">
-            <input type="radio" id="definitely" name="recommend-to-friend">
+            <input type="radio" id="definitely" name="recommend-to-friend" value="definitely">
             <label for="definitely" class="label-generic">Definitely</label>
           </div>
           <div class="radion-generic">
-            <input type="radio" id="maybe" name="recommend-to-friend">
+            <input type="radio" id="maybe" name="recommend-to-friend" value="maybe">
             <label for="maybe" class="label-generic">Maybe</label>
           </div>
           <div class="radion-generic">
-            <input type="radio" id="not-sure" name="recommend-to-friend">
+            <input type="radio" id="not-sure" name="recommend-to-friend" value="not-sure">
             <label for="not-sure" class="label-generic">Not sure</label>
           </div>
         </div>
@@ -86,10 +86,10 @@
           </label>
           <select class="input-generic" required>
             <option disabled selected>Select an option</option>
-            <option>Challenges</option>
-            <option>Projects</option>
-            <option>Community</option>
-            <option>Open source</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open-source">Open source</option>
           </select>
         </div>
 
@@ -101,57 +101,57 @@
           </label>
 
           <div class="radion-generic">
-            <input type="checkbox" id="front-end-projects" name="feature-suggestion">
+            <input type="checkbox" id="front-end-projects" name="feature-suggestion" value="front-end-projects">
             <label for="front-end-projects" class="label-generic">Front-end Projects</label>
           </div>
 
           <div class="radion-generic">
-            <input type="checkbox" id="back-end-projects" name="feature-suggestion">
+            <input type="checkbox" id="back-end-projects" name="feature-suggestion" value="back-end-projects">
             <label for="back-end-projects" class="label-generic">Back-end Projects</label>
           </div>
           
           <div class="radion-generic">
-            <input type="checkbox" id="data-visualization" name="feature-suggestion">
+            <input type="checkbox" id="data-visualization" name="feature-suggestion" value="data-visualization">
             <label for="data-visualization" class="label-generic">Data visualization</label>
           </div>
           
           <div class="radion-generic">
-            <input type="checkbox" id="challenges" name="feature-suggestion">
+            <input type="checkbox" id="challenges" name="feature-suggestion" value="challenges">
             <label for="challenges" class="label-generic">Challenges</label>
           </div>
           
           <div class="radion-generic">
-            <input type="checkbox" id="open-source-community" name="feature-suggestion">
+            <input type="checkbox" id="open-source-community" name="feature-suggestion" value="open-source-community">
             <label for="open-source-community" class="label-generic">Open Source Community</label>
           </div>
           
           <div class="radion-generic">
-            <input type="checkbox" id="gitter help rooms" name="feature-suggestion">
-            <label for="gitter help rooms" class="label-generic">Gitter help rooms</label>
+            <input type="checkbox" id="gitter-help-rooms" name="feature-suggestion" value="gitter-help-rooms">
+            <label for="gitter-help-rooms" class="label-generic">Gitter help rooms</label>
           </div>
 
           <div class="radion-generic">
-            <input type="checkbox" id="Videos" name="feature-suggestion">
+            <input type="checkbox" id="Videos" name="feature-suggestion" value="feature-suggestion">
             <label for="Videos" class="label-generic">Videos</label>
           </div>
           
           <div class="radion-generic">
-            <input type="checkbox" id="city-meetups" name="feature-suggestion">
+            <input type="checkbox" id="city-meetups" name="feature-suggestion" value="city-meetups">
             <label for="city-meetups" class="label-generic">City Meetups</label>
           </div>
           
           <div class="radion-generic">
-            <input type="checkbox" id="wiki" name="feature-suggestion">
+            <input type="checkbox" id="wiki" name="wiki" value="wiki">
             <label for="wiki" class="label-generic">Wiki</label>
           </div>
           
           <div class="radion-generic">
-            <input type="checkbox" id="forum" name="feature-suggestion">
+            <input type="checkbox" id="forum" name="forum" value="forum">
             <label for="forum" class="label-generic">Forum</label>
           </div>
           
           <div class="radion-generic">
-            <input type="checkbox" id="additional-courses" name="feature-suggestion">
+            <input type="checkbox" id="additional-courses" name="additional-courses" value="additional-courses">
             <label for="additional-courses" class="label-generic">Additional Courses</label>
           </div>
         </div>
@@ -165,7 +165,7 @@
         </div>
 
         <!-- Submit button  -->
-        <input type="submit" value="Submit" class="input-generic" id="submit-button">
+        <input type="submit" value="Submit" class="input-generic" id="submit">
 
       </form>
     </div>
